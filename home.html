@@ -42,35 +42,58 @@
             </div>
         </div>
     </header>
-    <div class="top-head container">
-        <div class="top-head-left">
-            <div class="top-head-left-content">
-                <h3>Thi trắc nghiệm online</h3>
+    <div class="top-head">
+        <div class="account">
+            <div class="account-tab">
+                <div class="account-tab-item account-tab-login account-tab-active">Đăng nhập</div>
+                <div class="account-tab-item account-tab-signup">Đăng kí</div>
             </div>
-        </div>
-        <div class="top-head-right">
-            <div class="account">
-                <div class="account-tab">
-                    <div class="account-tab-item account-tab-login ">Đăng nhập</div>
-                    <div class="account-tab-item account-tab-signup">Đăng kí</div>
-                </div>
-                <div class="login-form">
-                    <form action="">
-                        <div class="inputBox">
-                            <input type="text" name="" id="" required>
-                            <span>Tên đăng nhập</span>
+            <div class="login-form hide">
+                <form method="PUT">
+                    <div class="inputBox">
+                        <input type="text" name="username" id="" required>
+                        <span>Tên đăng nhập</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="password" id="" required>
+                        <span>Mật khẩu</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Đăng nhập">
+                    </div>
+                </form>
+            </div>
+            <div class="signup-form">
+                <form method="PUT">
+                    <div class="inputBox">
+                        <input type="text" name="username" id="" required>
+                        <span>Tên đăng nhập</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="phone" id="" required>
+                        <span>Số điện thoại</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="password" id="" required>
+                        <span>Mật khẩu</span>
+                    </div>
+                    <div class="radio-group">
+                        <div class="radio">
+                            <input type="radio" name="typeOfAccout" id="radio-student" class="radio-input" value="student">
+                            <label for="radio-student" class="radio-label">Học sinh</label>
                         </div>
-                        <div class="inputBox">
-                            <input type="text" name="" id="" required>
-                            <span>Mật khẩu</span>
+                        <div class="radio">
+                            <input type="radio" name="typeOfAccout" id="radio-teacher" class="radio-input" value="teacher">
+                            <label for="radio-teacher" class="radio-label">Giáo viên</label>
                         </div>
-                        <div class="inputBox">
-                            <input type="submit" value="Đăng nhập">
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Đăng ký">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </body>
+<script src="js/home.js"></script>
 </html>
